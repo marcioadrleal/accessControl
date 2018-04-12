@@ -20,6 +20,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.TableGenerator;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import br.com.controle.acesso.database.domain.util.UtilDomain;
 
 
@@ -51,6 +53,7 @@ public abstract class Person implements Serializable {
 	@Column(name="SURNAME" , nullable=false , length=120 )
 	private String surName;
 	
+	@JsonFormat(pattern="dd/MM/yyyy HH:mm")
 	@Column(name="SAVE_DATE" , nullable=false )
 	private Date currentDate;
 	
