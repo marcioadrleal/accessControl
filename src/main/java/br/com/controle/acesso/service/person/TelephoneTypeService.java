@@ -21,5 +21,11 @@ public class TelephoneTypeService {
   }
   
   
+  
+  public TelephoneType insert(TelephoneType telephone) {
+	telephone.setId(null);
+	return repo.save(telephone);
+  }
+  
 	
 }
