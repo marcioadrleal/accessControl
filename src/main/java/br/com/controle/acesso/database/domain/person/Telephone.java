@@ -88,6 +88,23 @@ public class Telephone implements Serializable {
 		return result;
 	}
 
+	
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public void setObservationDescription(String observationDescription) {
+		ObservationDescription = observationDescription;
+	}
+
+	public void setPhoneType(TelephoneType phoneType) {
+		this.phoneType = phoneType;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
